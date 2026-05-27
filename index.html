@@ -1,1 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shailesh Bhil</title>
 
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+      color:#222;
+    }
+
+    header{
+      background:#0f172a;
+      color:white;
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:50px;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:22px;
+      color:#cbd5e1;
+    }
+
+    nav{
+      background:#111827;
+      padding:15px;
+      text-align:center;
+      position:sticky;
+      top:0;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    section{
+      padding:60px 10%;
+    }
+
+    .title{
+      font-size:35px;
+      margin-bottom:30px;
+      color:#0f172a;
+      position:relative;
+    }
+
+    .title::after{
+      content:"";
+      width:80px;
+      height:4px;
+      background:#38bdf8;
+      position:absolute;
+      left:0;
+      bottom:-10px;
+    }
+
+    .about{
+      display:flex;
+      gap:40px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .about img{
+      width:280px;
+      border-radius:20px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    .about-text{
+      flex:1;
+      min-width:300px;
+    }
+
+    .about-text p{
+      font-size:18px;
+      line-height:1.8;
+      color:#444;
+    }
+
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .skill-card{
+      background:white;
+      padding:25px;
+      border-radius:15px;
+      text-align:center;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .skill-card:hover{
+      transform:translateY(-10px);
+    }
+
+    .skill-card h3{
+      margin-bottom:10px;
+      color:#0f172a;
+    }
+
+    .education-box,
+    .project-box,
+    .contact-box{
+      background:white;
+      padding:30px;
+      border-radius:20px;
+      margin-bottom:25px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .project-box h3{
+      margin-bottom:10px;
+      color:#0f172a;
+    }
+
+    .project-box p{
+      line-height:1.7;
+      color:#555;
+    }
+
+    .contact-box p{
+      margin:10px 0;
+      font-size:18px;
+    }
+
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+
+      header h1{
+        font-size:38px;
+      }
+
+      .about{
+        flex-direction:column;
+      }
+
+      .about img{
+        width:100%;
+        max-width:320px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Bhil Shailesh</h1>
+    <p>PHP Developer | Web Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="title">About Me</h2>
+
+    <div class="about">
+
+      <img src="" alt="profile">
+
+      <div class="about-text">
+        <p>
+          I am a passionate web developer with knowledge of HTML, CSS,
+          JavaScript, PHP, and Python. I enjoy creating responsive and
+          user-friendly websites with clean designs. I am a quick learner
+          and always excited to improve my coding and development skills.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="title">Skills</h2>
+
+    <div class="skills">
+
+      <div class="skill-card">
+        <h3>HTML5</h3>
+        <p>Responsive Website Design</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>CSS3</h3>
+        <p>Modern UI Design</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+        <p>Basic Frontend Development</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>PHP</h3>
+        <p>Backend Development</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Python</h3>
+        <p>Programming & Logic Building</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>GitHub</h3>
+        <p>Project Upload & Management</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2 class="title">Education</h2>
+
+    <div class="education-box">
+      <h3>BSc IT</h3>
+      <p>Geetanjali Group of Colleges, Rajkot</p>
+    </div>
+
+    <div class="education-box">
+      <h3>Higher Secondary Education</h3>
+      <p>Shree Sandipani Vidhyasankul, Rajkot</p>
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 class="title">Projects</h2>
+
+    <div class="project-box">
+      <h3>Responsive HTML CSS Website</h3>
+
+      <p>
+        Created a complete responsive website using HTML and CSS.
+        The website is mobile-friendly and works smoothly on all devices.
+        Also uploaded and managed the project on GitHub.
+      </p>
+    </div>
+
+    <div class="project-box">
+      <h3>PHP College Project</h3>
+
+      <p>
+        Developed a PHP-based project with database integration and
+        backend functionality. Improved coding, problem-solving,
+        and teamwork skills through this project.
+      </p>
+    </div>
+
+    <div class="project-box">
+      <h3>Python Training Project</h3>
+
+      <p>
+        Learned Python core concepts including functions, OOP,
+        file handling, and exception handling.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="title">Contact</h2>
+
+    <div class="contact-box">
+      <p><strong>Email:</strong> shaileshbhil121@gmail.com</p>
+      <p><strong>Phone:</strong> 9054966435</p>
+      <p><strong>Location:</strong> Surat, Gujarat</p>
+      <p><strong>LinkedIn:</strong> linkedin.com/in/shailesh-bhil</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Bhil Shailesh | Portfolio Website</p>
+  </footer>
+
+</body>
+</html>
