@@ -1,362 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Shailesh Bhil | Portfolio</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 
 <style>
 
-:root{
-  --bg:#0f172a;
-  --card:#1e293b;
-  --text:#ffffff;
-  --light:#cbd5e1;
-  --main:#38bdf8;
-  --white:#ffffff;
-}
-
-.light-mode{
-  --bg:#f4f4f4;
-  --card:#ffffff;
-  --text:#111827;
-  --light:#555;
-  --main:#0284c7;
-}
-
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  scroll-behavior:smooth;
-  font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 body{
-  background:var(--bg);
-  color:var(--text);
-  transition:0.4s;
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+    color:white;
 }
 
 /* NAVBAR */
 
 nav{
-  width:100%;
-  padding:18px 8%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  background:rgba(15,23,42,0.9);
-  backdrop-filter:blur(10px);
-  position:fixed;
-  top:0;
-  z-index:1000;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(15,23,42,0.96);
+    backdrop-filter:blur(10px);
+    box-shadow:0 2px 10px rgba(0,0,0,0.3);
 }
 
 .logo{
-  font-size:28px;
-  font-weight:700;
-  color:var(--main);
+    font-size:30px;
+    font-weight:700;
+    color:#38bdf8;
 }
 
-.nav-links{
-  display:flex;
-  gap:30px;
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
 }
 
-.nav-links a{
-  color:white;
-  text-decoration:none;
-  font-size:16px;
-  transition:0.3s;
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
 }
 
-.nav-links a:hover{
-  color:var(--main);
+nav ul li a:hover{
+    color:#38bdf8;
 }
 
-.menu-btn{
-  display:none;
-  font-size:26px;
-  color:white;
-  cursor:pointer;
-}
-
-.dark-btn{
-  width:45px;
-  height:45px;
-  border:none;
-  border-radius:50%;
-  background:var(--main);
-  color:white;
-  cursor:pointer;
-  font-size:18px;
-}
-
-/* HERO */
+/* HERO SECTION */
 
 .hero{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:120px 10%;
-  gap:60px;
-  flex-wrap:wrap;
+    min-height:100vh;
+    padding:180px 8% 100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
 }
 
 .hero-text{
-  flex:1;
-}
-
-.hero-text h3{
-  font-size:24px;
-  color:var(--main);
+    flex:1;
 }
 
 .hero-text h1{
-  font-size:65px;
-  margin:15px 0;
+    font-size:60px;
+    margin-bottom:10px;
+    line-height:1.2;
+}
+
+.hero-text h1 span{
+    color:#38bdf8;
 }
 
 .hero-text h2{
-  font-size:32px;
-  margin-bottom:20px;
-  color:var(--light);
-}
-
-.typing{
-  color:var(--main);
+    font-size:30px;
+    color:#cbd5e1;
+    margin-bottom:20px;
 }
 
 .hero-text p{
-  line-height:1.8;
-  color:var(--light);
-  margin-bottom:30px;
-  max-width:600px;
+    color:#94a3b8;
+    line-height:1.9;
+    margin-bottom:35px;
+    max-width:600px;
 }
 
+/* BUTTONS */
+
 .btns{
-  display:flex;
-  gap:20px;
-  flex-wrap:wrap;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
 .btn{
-  padding:14px 28px;
-  background:var(--main);
-  color:white;
-  text-decoration:none;
-  border-radius:50px;
-  transition:0.3s;
-  font-weight:600;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
 }
 
-.btn:hover{
-  transform:translateY(-5px);
+.primary{
+    background:#38bdf8;
+    color:black;
 }
 
-.outline{
-  background:transparent;
-  border:2px solid var(--main);
+.primary:hover{
+    transform:translateY(-5px);
 }
+
+.secondary{
+    border:2px solid #38bdf8;
+    color:#38bdf8;
+}
+
+.secondary:hover{
+    background:#38bdf8;
+    color:black;
+}
+
+/* IMAGE */
 
 .hero-image{
-  flex:1;
-  display:flex;
-  justify-content:center;
+    flex:1;
+    display:flex;
+    justify-content:center;
 }
 
-.hero-image img{
-  width:350px;
-  border-radius:30px;
-  box-shadow:0 0 30px rgba(56,189,248,0.4);
-  animation:float 4s ease-in-out infinite;
-}
-
-@keyframes float{
-  50%{
-    transform:translateY(-15px);
-  }
+.profile-img{
+    width:340px;
+    height:340px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #38bdf8;
+    box-shadow:0 0 40px rgba(56,189,248,0.5);
 }
 
 /* SECTION */
 
 section{
-  padding:100px 10%;
+    padding:90px 8%;
 }
 
-.title{
-  text-align:center;
-  font-size:42px;
-  margin-bottom:60px;
-  position:relative;
+.section-title{
+    text-align:center;
+    font-size:42px;
+    color:#38bdf8;
+    margin-bottom:50px;
 }
 
-.title::after{
-  content:"";
-  width:100px;
-  height:4px;
-  background:var(--main);
-  position:absolute;
-  left:50%;
-  transform:translateX(-50%);
-  bottom:-15px;
+/* ABOUT */
+
+.about-box{
+    background:#1e293b;
+    padding:40px;
+    border-radius:20px;
+    line-height:2;
+    color:#cbd5e1;
 }
 
 /* SKILLS */
 
-.skills{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
 }
 
 .skill-card{
-  background:var(--card);
-  padding:35px;
-  border-radius:20px;
-  text-align:center;
-  transition:0.4s;
-  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.3s;
 }
 
 .skill-card:hover{
-  transform:translateY(-10px);
+    transform:translateY(-10px);
+    background:#334155;
 }
 
 .skill-card i{
-  font-size:45px;
-  color:var(--main);
-  margin-bottom:20px;
+    font-size:40px;
+    color:#38bdf8;
+    margin-bottom:15px;
 }
 
 .skill-card h3{
-  margin-bottom:10px;
+    margin-bottom:10px;
+}
+
+.skill-card p{
+    color:#cbd5e1;
+    font-size:14px;
+    line-height:1.7;
+}
+
+/* EDUCATION */
+
+.timeline{
+    border-left:3px solid #38bdf8;
+    padding-left:30px;
+}
+
+.timeline-item{
+    margin-bottom:40px;
+}
+
+.timeline-item h3{
+    color:#38bdf8;
+    margin-bottom:10px;
 }
 
 /* PROJECTS */
 
-.projects{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:30px;
-}
-
 .project-card{
-  background:var(--card);
-  border-radius:20px;
-  overflow:hidden;
-  transition:0.4s;
-  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    background:#1e293b;
+    padding:35px;
+    border-radius:20px;
 }
 
-.project-card:hover{
-  transform:translateY(-10px);
+.project-card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
 }
 
-.project-card img{
-  width:100%;
-  height:220px;
-  object-fit:cover;
+.project-card p{
+    color:#cbd5e1;
+    line-height:1.8;
 }
 
-.project-content{
-  padding:25px;
-}
-
-.project-content h3{
-  margin-bottom:15px;
-}
-
-.project-content p{
-  color:var(--light);
-  line-height:1.7;
-  margin-bottom:20px;
+.project-link{
+    display:inline-block;
+    margin-top:20px;
+    text-decoration:none;
+    color:#38bdf8;
 }
 
 /* CONTACT */
 
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
 .contact-box{
-  background:var(--card);
-  padding:40px;
-  border-radius:20px;
-  text-align:center;
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
 }
 
-.contact-box p{
-  margin:15px 0;
-  font-size:18px;
-}
-
-.socials{
-  margin-top:25px;
-}
-
-.socials a{
-  display:inline-flex;
-  width:50px;
-  height:50px;
-  align-items:center;
-  justify-content:center;
-  background:var(--main);
-  color:white;
-  border-radius:50%;
-  margin:0 10px;
-  font-size:20px;
-  text-decoration:none;
-  transition:0.3s;
-}
-
-.socials a:hover{
-  transform:translateY(-8px);
+.contact-box i{
+    font-size:35px;
+    color:#38bdf8;
+    margin-bottom:15px;
 }
 
 /* FOOTER */
 
 footer{
-  text-align:center;
-  padding:25px;
-  background:#020617;
-  color:#cbd5e1;
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    color:#94a3b8;
 }
 
-/* RESPONSIVE */
+/* MOBILE */
 
 @media(max-width:900px){
 
-  .hero-text h1{
-    font-size:45px;
-  }
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
 
-  .hero-text h2{
-    font-size:24px;
-  }
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
 
-  .nav-links{
-    position:absolute;
-    top:80px;
-    right:-100%;
-    background:#0f172a;
-    width:250px;
-    flex-direction:column;
-    padding:30px;
-    transition:0.4s;
-  }
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding-top:230px;
+    }
 
-  .nav-links.active{
-    right:0;
-  }
+    .hero-text h1{
+        font-size:42px;
+    }
 
-  .menu-btn{
-    display:block;
-  }
+    .hero-text h2{
+        font-size:24px;
+    }
+
+    .hero-text p{
+        margin:auto;
+        margin-bottom:30px;
+    }
+
+    .btns{
+        justify-content:center;
+    }
+
+    .profile-img{
+        width:250px;
+        height:250px;
+    }
+
+    .section-title{
+        font-size:34px;
+    }
 }
 
 </style>
@@ -368,26 +347,16 @@ footer{
 
 <nav>
 
-  <div class="logo">Shailesh Bhil</div>
+    <div class="logo">Shailesh</div>
 
-  <div class="nav-links" id="navLinks">
-    <a href="#home">Home</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-  <div style="display:flex; gap:15px; align-items:center;">
-
-    <button class="dark-btn" onclick="toggleMode()">
-      <i class="fa-solid fa-moon"></i>
-    </button>
-
-    <div class="menu-btn" onclick="toggleMenu()">
-      <i class="fa-solid fa-bars"></i>
-    </div>
-
-  </div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 
 </nav>
 
@@ -395,40 +364,63 @@ footer{
 
 <section class="hero" id="home">
 
-  <div class="hero-text">
+    <div class="hero-text">
 
-    <h3>Hello, I'm</h3>
+        <h1>Hello, I'm <span>Shailesh Bhil</span></h1>
 
-    <h1>Shailesh Bhil</h1>
+        <h2>PHP Developer & Web Designer</h2>
 
-    <h2>
-      I'm a
-      <span class="typing"></span>
-    </h2>
+        <p>
+            Passionate web developer with knowledge of HTML, CSS,
+            PHP, Python and responsive web design. I enjoy building
+            clean, user-friendly and modern websites.
+        </p>
 
-    <p>
-      Passionate Web Developer skilled in HTML, CSS,
-      JavaScript, PHP, and Python. I create modern,
-      responsive, and user-friendly websites with clean UI.
-    </p>
+        <div class="btns">
 
-    <div class="btns">
+            <a href="resume.pdf" download class="btn primary">
+                Download CV
+            </a>
 
-      <a href="#contact" class="btn">
-        Hire Me
-      </a>
+            <a href="#contact" class="btn secondary">
+                Contact Me
+            </a>
 
-      <a href="Shailesh Bhil R resume.pdf" download class="btn outline">
-        Download CV
-      </a>
+        </div>
 
     </div>
 
-  </div>
+    <!-- IMAGE -->
 
-  <div class="hero-image">
-    <img src="images/IMG_20260527_191058.png" alt="Profile">
-  </div>
+    <div class="hero-image">
+
+        <img src="myphoto.jpg"
+        alt="Shailesh Bhil"
+        class="profile-img">
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-box">
+
+        I am a passionate and hardworking web developer currently
+        pursuing BSc IT from Geetanjali Group of Colleges, Rajkot.
+
+        I have experience in HTML, CSS, PHP, JavaScript and Python.
+        I created responsive websites and worked on PHP-based projects
+        during my college studies.
+
+        I love learning new technologies and improving my frontend
+        and backend development skills.
+
+    </div>
 
 </section>
 
@@ -436,99 +428,138 @@ footer{
 
 <section id="skills">
 
-  <h2 class="title">My Skills</h2>
+    <h2 class="section-title">My Skills</h2>
 
-  <div class="skills">
+    <div class="skills-container">
 
-    <div class="skill-card">
-      <i class="fa-brands fa-html5"></i>
-      <h3>HTML5</h3>
-      <p>Responsive Website Structure</p>
+        <div class="skill-card">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML5</h3>
+            <p>Responsive website structure design.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS3</h3>
+            <p>Modern UI and responsive styling.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScript (Basic)</h3>
+            <p>Basic interactive website functionality.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-php"></i>
+            <h3>PHP Language Programming</h3>
+            <p>Backend development and database handling.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-python"></i>
+            <h3>Python Language Programming</h3>
+            <p>Programming fundamentals and coding logic.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h3>Responsive Web Design</h3>
+            <p>Mobile friendly modern websites.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Problem Solving</h3>
+            <p>Analytical thinking and debugging skills.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Quick Learner</h3>
+            <p>Ability to learn new technologies quickly.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-file-excel"></i>
+            <h3>MS Excel</h3>
+            <p>Spreadsheet and data management skills.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-file-word"></i>
+            <h3>MS Office</h3>
+            <p>Document and office productivity tools.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>VS Code</h3>
+            <p>Code editor and development environment.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-cube"></i>
+            <h3>3D Designer</h3>
+            <p>Creative 3D modeling and design skills.</p>
+        </div>
+
     </div>
-
-    <div class="skill-card">
-      <i class="fa-brands fa-css3-alt"></i>
-      <h3>CSS3</h3>
-      <p>Modern UI & Animations</p>
-    </div>
-
-    <div class="skill-card">
-      <i class="fa-brands fa-js"></i>
-      <h3>JavaScript</h3>
-      <p>Interactive Frontend Design</p>
-    </div>
-
-    <div class="skill-card">
-      <i class="fa-brands fa-php"></i>
-      <h3>PHP</h3>
-      <p>Backend Development</p>
-    </div>
-
-    <div class="skill-card">
-      <i class="fa-brands fa-python"></i>
-      <h3>Python</h3>
-      <p>Programming Logic</p>
-    </div>
-
-    <div class="skill-card">
-      <i class="fa-brands fa-github"></i>
-      <h3>GitHub</h3>
-      <p>Project Management</p>
-    </div>
-
-  </div>
 
 </section>
 
-<!-- PROJECTS -->
+<!-- EDUCATION -->
+
+<section id="education">
+
+    <h2 class="section-title">Education</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <h3>BSc IT</h3>
+            <p>Geetanjali Group of Colleges, Rajkot</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Secondary & Higher Secondary</h3>
+            <p>Shree Sandipani Vidhyasankul, Rajkot</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Python Course</h3>
+            <p>Completed Python language training.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECT -->
 
 <section id="projects">
 
-  <h2 class="title">Projects</h2>
-
-  <div class="projects">
+    <h2 class="section-title">Projects</h2>
 
     <div class="project-card">
-
-      <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1200&auto=format&fit=crop" alt="">
-
-      <div class="project-content">
 
         <h3>Krishna Tours & Travels</h3>
 
         <p>
-          Fully responsive travel website created using HTML and CSS.
+            Built a responsive and user-friendly travel website using
+            HTML and CSS. The website showcases travel services,
+            booking information and modern UI design.
         </p>
 
-        <a href="https://shaileshbhil1121.github.io/krishna_tours_and_travels/" class="btn" target="_blank">
-          Live Demo
+        <a href="https://shaileshbhill121.github.io/krishna_tours_and_travels/"
+        target="_blank"
+        class="project-link">
+
+        View Project →
+
         </a>
 
-      </div>
-
     </div>
-
-    <div class="project-card">
-
-      <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop" alt="">
-
-      <div class="project-content">
-
-        <h3>E-Commerce Website</h3>
-
-        <p>
-          Modern Amazon Clone UI with responsive design and shopping layout.
-        </p>
-
-        <a href="https://shaileshbhil1121.github.io/E-Commerce_website/" class="btn" target="_blank">
-          Live Demo
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
 
 </section>
 
@@ -536,112 +567,51 @@ footer{
 
 <section id="contact">
 
-  <h2 class="title">Contact Me</h2>
+    <h2 class="section-title">Contact Me</h2>
 
-  <div class="contact-box">
+    <div class="contact-container">
 
-    <p><strong>Email:</strong> shaileshbhil121@gmail.com</p>
+        <div class="contact-box">
 
-    <p><strong>Phone:</strong> +91 9054966435</p>
+            <i class="fa-solid fa-envelope"></i>
 
-    <p><strong>Location:</strong> Surat, Gujarat</p>
+            <h3>Email</h3>
 
-    <div class="socials">
+            <p>shaileshbhill121@gmail.com</p>
 
-      <a href="#">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
+        </div>
 
-      <a href="#">
-        <i class="fa-brands fa-github"></i>
-      </a>
+        <div class="contact-box">
 
-      <a href="#">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
+            <i class="fa-solid fa-phone"></i>
+
+            <h3>Phone</h3>
+
+            <p>9054966435</p>
+
+        </div>
+
+        <div class="contact-box">
+
+            <i class="fa-brands fa-linkedin"></i>
+
+            <h3>LinkedIn</h3>
+
+            <p>linkedin.com/in/shailesh-bhil</p>
+
+        </div>
 
     </div>
-
-  </div>
 
 </section>
 
 <!-- FOOTER -->
 
 <footer>
-  © 2026 Shailesh Bhil | All Rights Reserved
+
+    © 2026 Shailesh Bhil 
+
 </footer>
-
-<script>
-
-/* MOBILE MENU */
-
-function toggleMenu(){
-  document.getElementById("navLinks").classList.toggle("active");
-}
-
-/* DARK MODE */
-
-function toggleMode(){
-  document.body.classList.toggle("light-mode");
-}
-
-/* TYPING EFFECT */
-
-const words = [
-  "Web Developer",
-  "PHP Developer",
-  "Frontend Designer",
-  "Freelancer"
-];
-
-let i = 0;
-let j = 0;
-let currentWord = "";
-let isDeleting = false;
-
-function type(){
-
-  currentWord = words[i];
-
-  if(isDeleting){
-    j--;
-  }else{
-    j++;
-  }
-
-  document.querySelector(".typing").innerHTML =
-  currentWord.substring(0,j);
-
-  if(!isDeleting && j == currentWord.length){
-
-    isDeleting = true;
-
-    setTimeout(type,1000);
-
-  }else if(isDeleting && j == 0){
-
-    isDeleting = false;
-
-    i++;
-
-    if(i == words.length){
-      i = 0;
-    }
-
-    setTimeout(type,200);
-
-  }else{
-
-    setTimeout(type,isDeleting ? 60 : 120);
-
-  }
-
-}
-
-type();
-
-</script>
 
 </body>
 </html>
